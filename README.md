@@ -1,6 +1,7 @@
 **Studentų galutinio balo skaičiuoklė**
 
 Ši programa yra sukurta skaičiuoti studentų galutinį balą naudojant formulę
+
 <img width="378" alt="Screenshot 2022-09-29 at 23 15 54" src="https://user-images.githubusercontent.com/113093671/193133329-ea2db47d-80bd-4c3c-97f2-0d676d135a3d.png">
 
 
