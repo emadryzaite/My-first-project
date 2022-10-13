@@ -9,9 +9,9 @@ taip pat galima naudoti ir medianą vietoj vidurkio.
 
 **Naudotojas gali pasirinkti duomenų įvedima dvėjais būdais:**
 
--rankiniu būdū
+-rankiniu būdu
 
--nuskaityti iš failo
+-sugeneruoti naują failą (1000, 10 000, 100 000, 1000 000, 10 000 000 įrašų)
 
 **Rezultatas atrodo šitaip:**
 
@@ -28,3 +28,7 @@ Programos naudotojas turi įrašyti duomenis:
 -Egzamino rezultatą (10-balėje sistemoje)
 
 Taip pat programos naudotojas gali pasirinkti ar namų darbų/egzamino vertinimą įrašys pats, ar kad būtų sugeneruotas.
+
+**Programa surūšiuoja studentus** į "Kietiakai" jei jų galutinis balas >= 5.0, ir į "Vargsiukai" jei jų galutinis balas < 5.0. Tuomet yra išvedami du atskiri failai : kietiakai.txt ir vargsiukai.txt.
+
+Taip pat programa atlieka **veikimo greičio (spartos) analizę**. Apskačiuoja sugaištą laiką failams sugeneruoti, nuskaityti, suskirstyti ir išvesti.
