@@ -67,6 +67,7 @@ void nuskaitymas(vector<irasas> &Stud, string failas) {
     exit(0);
   }
   double pabaiga = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - pradzia).count() / 1000.0;
+  cout << endl <<"Sugaistas laikas duomenims nuskaityti: " << pabaiga << " s" << endl << endl;  
 }
 void papildoma(vector<irasas> &Stud) {
   irasas St;
