@@ -31,9 +31,22 @@ Taip pat programos naudotojas gali pasirinkti ar namų darbų/egzamino vertinim�
 
 **Programa surūšiuoja studentus** į "Kietiakai" jei jų galutinis balas >= 5.0, ir į "Vargsiukai" jei jų galutinis balas < 5.0. Tuomet yra išvedami du atskiri failai : kietiakai.txt ir vargsiukai.txt.
 
-Taip pat programa atlieka **veikimo greičio (spartos) analizę**. Apskačiuoja sugaištą laiką failams sugeneruoti, nuskaityti, suskirstyti ir išvesti.
-1000 - 0.012s (sugeneruoti), 0.001s (nuskaityti), 0s (suskirstyti), 0.017s (isvesti)
-10000 - 0.253s (sugeneruoti), 0.088s (nuskaityti), 0.001s (suskirstyti), 0.0369s (isvesti)
-100000 - 2.753s (sugeneruoti), 0.472s (nuskaityti), 0.015s (suskirstyti), 1.797s (isvesti)
-1000000 - 29.16s (sugeneruoti), 4.695s (nuskaityti), 0.403s (suskirstyti), 13.447s (isvesti)
+Naudojami du konteineriai:
+
+-Vector
+
+-List
+
+Taip pat programa atlieka **veikimo greičio (spartos) analizę**. Apskačiuoja sugaištą laiką failams  nuskaityti ir suskirstyti.
+VEKTORIAI
+1000 - 0.001s (nuskaityti), 0s (suskirstyti)
+10000 - 0.088s (nuskaityti), 0.001s (suskirstyti), 
+100000 -  0.472s (nuskaityti), 0.015s (suskirstyti)
+1000000 -  4.695s (nuskaityti), 0.403s (suskirstyti)
+
+LIST
+1000 - 0.003s (nuskaityti), 0s (suskirstyti)
+10000 - 0.021s (nuskaityti), 0.002s (suskirstyti), 
+100000 -  0.479s (nuskaityti), 0.012s (suskirstyti)
+1000000 -  4.495s (nuskaityti), 0.664s (suskirstyti)
 
