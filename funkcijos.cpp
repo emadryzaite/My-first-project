@@ -241,9 +241,8 @@ int vardTvark(vector<irasas> Stud) {
   return max;
 }
 void rikiavimas(vector<irasas> &Stud) {
-  sort(Stud.begin(), Stud.end(), pavardLyginimas);
+  sort(Stud.begin(), Stud.end(), lyginimasPavard());
 }
-bool pavardLyginimas(irasas &a, irasas &b) { return a.pavarde < b.pavarde; }
 
 void spausdinimas(vector<irasas> Stud, string failas) {
   rikiavimas(Stud);
