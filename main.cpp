@@ -2,7 +2,6 @@
 
 int main() {
   vector<irasas> Stud;
-  vector<irasas> Vargsiukai;
   vector<irasas> Kietiakai;
   string failas = "";
   srand(time(0));
@@ -16,10 +15,9 @@ int main() {
   nuskaitymas(Stud, failas);
   }
   vidMed(Stud);
-  skirstymas(Stud, Vargsiukai, Kietiakai);
-  spausdinimas(Vargsiukai, "vargsiukai.txt");
+  skirstymas(Stud, Kietiakai);
+  spausdinimas(Stud, "vargsiukai.txt");
   spausdinimas(Kietiakai, "kietiakai.txt");
   Stud.clear();
-  Vargsiukai.clear();
   Kietiakai.clear();
 }
