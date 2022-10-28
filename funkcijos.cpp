@@ -346,7 +346,7 @@ void generavimas(int sk, string &failas)
 
 }
 
-void skirstymas(vector <irasas> Stud, vector <irasas> &Vargsiukai, vector <irasas> &Kietiakai)
+void skirstymas(vector <irasas> &Stud, vector <irasas> &Kietiakai)
 {
     long int n = Stud.size();
     pradzia = std::chrono::steady_clock::now();
