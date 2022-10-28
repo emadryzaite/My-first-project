@@ -258,7 +258,7 @@ void spausdinimas(vector<irasas> Stud, string failas) {
   out << pnktr << endl;
   for (long int i = 0; i < t; i++) {
     out << left << setw(maxvardas + 15) << Stud.back().vardas <<
-         << setw(maxpavarde + 15) << Stud.back().pavarde << fixed << setprecision(2)
+          setw(maxpavarde + 15) << Stud.back().pavarde << fixed << setprecision(2)
          << Stud.back().galut << endl;
     Stud.pop_back();
     }
