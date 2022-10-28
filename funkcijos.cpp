@@ -1,7 +1,7 @@
 #include "funkcijos.h"
 
 void vidMed(vector<irasas> &Stud) {
-  cout << "Ar norite skaiciuoti vidurki, jei ne bus skaiciuojama mediana? "
+  //cout << "Ar norite skaiciuoti vidurki, jei ne bus skaiciuojama mediana? "
           "(iveskite + jei norite, - jei ne) ";
   long dydis = Stud.size();
   if (patvirtinimas()) {
@@ -258,9 +258,10 @@ void spausdinimas(vector<irasas> Stud, string failas) {
        << " Galutinis balas" << endl;
   out << pnktr << endl;
   for (long int i = 0; i < t; i++) {
-    out << left << setw(maxvardas + 15) << Stud[i].vardas
-         << setw(maxpavarde + 15) << Stud[i].pavarde << fixed << setprecision(2)
-         << Stud[i].galut << endl;
+    out << left << setw(maxvardas + 15) << Stud.back().vardas <<
+         << setw(maxpavarde + 15) << Stud.back().pavarde << fixed << setprecision(2)
+         << Stud.back().galut << endl;
+    Stud.pop_back();
     }
     
     
@@ -350,13 +351,10 @@ void skirstymas(vector <irasas> Stud, vector <irasas> &Vargsiukai, vector <irasa
     long int n = Stud.size();
     pradzia = std::chrono::steady_clock::now();
 
-    for (long int i = 0; i < n; i ++)
-    {
-        if(Stud[i].galut < 5) Vargsiukai.push_back(Stud[i]);
-        else Kietiakai.push_back(Stud[i]);
-    }
-
-    double pabaiga = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - pradzia).count() / 1000.0;
+    copy_if(Stud.begin(), Stud.end(), back_inserter(Kietiakai), [](irasas const& Stud) {return Stud.galut >= 5;});
+    Stud.erase(remove_if(Stud.begin(), Stud.end(), [](irasas const& Stud) {return Stud.galut >= 5;}),Stud.end());
+    
+  double pabaiga = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - pradzia).count() / 1000.0;
     cout << endl <<"Sugaistas laikas studentams suskirstyti: " << pabaiga << " s" << endl << endl;  
 }
 
