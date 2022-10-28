@@ -37,7 +37,7 @@ struct irasas {
   float galut;
 };
 struct lyginimasPavard{
-bool operator()(const irasas% a, const irasas& b) {return(b.pavarde.compare(a.pavarde));}
+bool operator()(const irasas& a, const irasas& b) {return(b.pavarde.compare(a.pavarde));}
 };
 
 void nuskaitymas(vector<irasas> &Stud, string failas);
