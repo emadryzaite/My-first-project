@@ -38,15 +38,28 @@ Naudojami du konteineriai:
 -List
 
 Taip pat programa atlieka **veikimo greičio (spartos) analizę**. Apskačiuoja sugaištą laiką failams  nuskaityti ir suskirstyti.
+
 VEKTORIAI
+
 1000 - 0.001s (nuskaityti), 0s (suskirstyti)
-10000 - 0.088s (nuskaityti), 0.001s (suskirstyti), 
+
+10000 - 0.088s (nuskaityti), 0.001s (suskirstyti)
+
 100000 -  0.472s (nuskaityti), 0.015s (suskirstyti)
+
 1000000 -  4.695s (nuskaityti), 0.403s (suskirstyti)
 
+10000000 -  62.893s (nuskaityti), 4.93s (suskirstyti)
+
 LIST
+
 1000 - 0.003s (nuskaityti), 0s (suskirstyti)
-10000 - 0.021s (nuskaityti), 0.002s (suskirstyti), 
+
+10000 - 0.021s (nuskaityti), 0.002s (suskirstyti)
+
 100000 -  0.479s (nuskaityti), 0.012s (suskirstyti)
+
 1000000 -  4.495s (nuskaityti), 0.664s (suskirstyti)
+
+1000000 -  44.49s (nuskaityti), 5.684s (suskirstyti)
 
