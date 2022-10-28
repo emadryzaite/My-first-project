@@ -36,6 +36,9 @@ struct irasas {
   int egzas;
   float galut;
 };
+struct lyginimasPavard{
+bool operator()(const irasas% a, const irasas& b) {return(b.pavarde.compare(a.pavarde));}
+};
 
 void nuskaitymas(vector<irasas> &Stud, string failas);
 bool vardInfo(string skai);
@@ -60,4 +63,4 @@ void generavimas(int sk, string &failas);
 int pasirinkimas();
 int skIrasymas();
 bool skGenTikrinimas(string pazym);
-void skirstymas(vector <irasas> Stud, vector <irasas> &Vargsiukai, vector <irasas> &Kietiakai);
+void skirstymas(vector <irasas> &Stud, vector <irasas> &Kietiakai);
