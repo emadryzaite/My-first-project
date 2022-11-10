@@ -23,7 +23,7 @@ int main() {
     spausdinimas(Kietiakai, "kietiakai.txt");
   }
   else {
-    cout << "Ar norite naudoti optimizuota strategija, jei ne bus naudojama neoptimizuota (+/-)";
+    cout << ""Ar norite studentu rusiavima vykdyti 2 strategija, kitu atveju 3(+/-) "";
     if(patvirtinimas()) 
     skirstymas2(Stud, Kietiakai);
     else 
