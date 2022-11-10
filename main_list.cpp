@@ -2,6 +2,7 @@
 
 int main() {
   list<irasas> Stud;
+  list<irasas> Vargsiukai;
   list<irasas> Kietiakai;
   string failas = "";
   srand(time(0));
@@ -15,9 +16,24 @@ int main() {
   nuskaitymas(Stud, failas);
   }
   vidMed(Stud);
-  skirstymas(Stud, Kietiakai);
-  spausdinimas(Stud, "vargsiukai.txt");
-  spausdinimas(Kietiakai, "kietiakai.txt");
-  Stud.clear();
-  Kietiakai.clear();
+  cout << "ar norite studentu rusiavima vykdyti 1 strategija, kitu atveju 2(+/-) ";
+  if(patvirtinimas()) {
+    skirstymas1(Stud,Vargsiukai, Kietiakai);
+    spausdinimas(Vargsiukai, "vargsiukai.txt");
+    spausdinimas(Kietiakai, "kietiakai.txt");
   }
+  else {
+    cout << "Ar norite naudoti optimizuota strategija, jei ne bus naudojama neoptimizuota (+/-)";
+    if(patvirtinimas()) 
+    skirstymas2(Stud, Kietiakai);
+    else 
+    skirstymas3(Stud, Kietiakai);
+    spausdinimas(Stud, "vargsiukai.txt");
+    spausdinimas(Kietiakai, "kietiakai.txt");
+  }
+  
+
+  Stud.clear();
+  Vargsiukai.clear();
+  Kietiakai.clear();
+}
