@@ -37,29 +37,79 @@ Naudojami du konteineriai:
 
 -List
 
-Taip pat programa atlieka **veikimo greičio (spartos) analizę**. Apskačiuoja sugaištą laiką failams  nuskaityti ir suskirstyti.
+Taip pat programa atlieka **veikimo greičio (spartos) analizę 3 būdais**. Apskačiuoja sugaištą laiką failams  nuskaityti ir suskirstyti.
 
 VEKTORIAI
+1 STRATEGIJA
 
-1000 - 0.001s (nuskaityti), 0s (suskirstyti)
+1000 - 0.006s (nuskaityti), 0s (suskirstyti)
 
-10000 - 0.088s (nuskaityti), 0.001s (suskirstyti)
+10000 - 0.028s (nuskaityti), 0.002s (suskirstyti)
 
-100000 -  0.472s (nuskaityti), 0.015s (suskirstyti)
+100000 -  0.228s (nuskaityti), 0.017s (suskirstyti)
 
 1000000 -  4.695s (nuskaityti), 0.403s (suskirstyti)
 
-10000000 -  62.893s (nuskaityti), 4.93s (suskirstyti)
+10000000 -  25.862s (nuskaityti), 1.099s (suskirstyti)
+
+2 STRATEGIJA
+
+1000 - 0.001s (nuskaityti), 0s (suskirstyti)
+
+10000 - 0.028s (nuskaityti), 0.0s (suskirstyti)
+
+100000 -  0.287s (nuskaityti), 0.008s (suskirstyti)
+
+1000000 -  2.98s (nuskaityti), 0.098s (suskirstyti)
+
+10000000 -  24.62s (nuskaityti), 0.94s (suskirstyti)
+
+3 STRATEGIJA
+
+1000 - 0.007s (nuskaityti), 0s (suskirstyti)
+
+10000 - 0.025s (nuskaityti), 0.001s (suskirstyti)
+
+100000 -  0.239s (nuskaityti), 0.006s (suskirstyti)
+
+1000000 -  2.451s (nuskaityti), 0.064s (suskirstyti)
+
+1000000 -  44.49s (nuskaityti), 5.684s (suskirstyti)
 
 LIST
+1 STRATEGIJA
+
+1000 - 0.002s (nuskaityti), 0s (suskirstyti)
+
+10000 - 0.027s (nuskaityti), 0.0s (suskirstyti)
+
+100000 -  0.238s (nuskaityti), 0.007s (suskirstyti)
+
+1000000 -  3.043s (nuskaityti), 0.076s (suskirstyti)
+
+10000000 -  25.862s (nuskaityti), 1.099s (suskirstyti)
+
+2 STRATEGIJA
+
+1000 - 0.001s (nuskaityti), 0s (suskirstyti)
+
+10000 - 0.028s (nuskaityti), 0.0s (suskirstyti)
+
+100000 -  0.287s (nuskaityti), 0.008s (suskirstyti)
+
+1000000 -  2.98s (nuskaityti), 0.098s (suskirstyti)
+
+10000000 -  24.62s (nuskaityti), 0.94s (suskirstyti)
+
+3 STRATEGIJA
 
 1000 - 0.003s (nuskaityti), 0s (suskirstyti)
 
-10000 - 0.021s (nuskaityti), 0.002s (suskirstyti)
+10000 - 0.025s (nuskaityti), 0.001s (suskirstyti)
 
-100000 -  0.479s (nuskaityti), 0.012s (suskirstyti)
+100000 -  0.239s (nuskaityti), 0.006s (suskirstyti)
 
-1000000 -  4.495s (nuskaityti), 0.664s (suskirstyti)
+1000000 -  2.451s (nuskaityti), 0.064s (suskirstyti)
 
 1000000 -  44.49s (nuskaityti), 5.684s (suskirstyti)
 
