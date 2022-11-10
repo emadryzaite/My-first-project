@@ -357,8 +357,36 @@ void generavimas(int sk, string &failas)
     
 
 }
+void skirstymas1(list <irasas> &Stud, list <irasas> &Vargsiukai, list <irasas> &Kietiakai)
+{
+  pradzia = std::chrono::steady_clock::now();
 
-void skirstymas(list <irasas> &Stud, list <irasas> &Kietiakai)
+  copy_if(Stud.begin(), Stud.end(), back_inserter(Kietiakai), [](irasas const& Stud) {return Stud.galut >= 5;});
+  copy_if(Stud.begin(), Stud.end(), back_inserter(Vargsiukai), [](irasas const& Stud) {return Stud.galut <= 5;});
+
+
+
+double pabaiga = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - pradzia).count() / 1000.0;
+    cout << endl <<"Sugaistas laikas studentams suskirstyti(1): " << pabaiga << " s" << endl << endl;  
+
+}
+
+void skirstymas2(list <irasas> &Stud, list <irasas> &Kietiakai)
+{
+  pradzia = std::chrono::steady_clock::now();
+  
+  auto it = stable_partition(Stud.begin(), Stud.end(), [](irasas const& Stud) {return Stud.galut < 5;});
+  Kietiakai.assign(it, Stud.end());
+  Stud.erase(it, Stud.end());
+    
+double pabaiga = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - pradzia).count() / 1000.0;
+    cout << endl <<"Sugaistas laikas studentams suskirstyti(2): " << pabaiga << " s" << endl << endl;  
+
+}
+
+
+
+void skirstymas3(list <irasas> &Stud, list <irasas> &Kietiakai)
 {
     long int n = Stud.size();
      pradzia = std::chrono::steady_clock::now();
@@ -369,5 +397,4 @@ void skirstymas(list <irasas> &Stud, list <irasas> &Kietiakai)
     double pabaiga = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - pradzia).count() / 1000.0;
     cout << endl <<"Sugaistas laikas studentams suskirstyti: " << pabaiga << " s" << endl << endl;  
 }
-
 
