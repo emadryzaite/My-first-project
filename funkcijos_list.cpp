@@ -392,8 +392,8 @@ void skirstymas3(list <irasas> &Stud, list <irasas> &Kietiakai)
      pradzia = std::chrono::steady_clock::now();
 
     copy_if(Stud.begin(), Stud.end(), back_inserter(Kietiakai), [](irasas const& Stud) {return Stud.galut >= 5;});
-    Stud.erase(remove_if(Stud.begin(), Stud.end(), [](irasas const& Stud) {return Stud.galut >= 5;}),Stud.end());
-
+    Stud.resize(Stud.size()- Kietiakai.size());
+  
     double pabaiga = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - pradzia).count() / 1000.0;
     cout << endl <<"Sugaistas laikas studentams suskirstyti: " << pabaiga << " s" << endl << endl;  
 }
