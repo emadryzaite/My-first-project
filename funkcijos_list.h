@@ -65,4 +65,6 @@ void generavimas(int sk, string &failas);
 int pasirinkimas();
 int skIrasymas();
 bool skGenTikrinimas(string pazym);
-void skirstymas(list <irasas> &Stud, list <irasas> &Kietiakai);
+void skirstymas1(list <irasas> &Stud, list <irasas> &Vargsiukai, list <irasas> &Kietiakai);
+void skirstymas2(list <irasas> &Stud, list <irasas> &Kietiakai);
+void skirstymas3(list <irasas> &Stud, list <irasas> &Kietiakai);
