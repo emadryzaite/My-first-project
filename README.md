@@ -74,7 +74,7 @@ VEKTORIAI
 
 1000000 -  2.451s (nuskaityti), 0.064s (suskirstyti)
 
-1000000 -  44.49s (nuskaityti), 5.684s (suskirstyti)
+10000000 -  44.49s (nuskaityti), 5.684s (suskirstyti)
 
 LIST
 1 STRATEGIJA
@@ -87,29 +87,29 @@ LIST
 
 1000000 -  3.043s (nuskaityti), 0.076s (suskirstyti)
 
-10000000 -  25.862s (nuskaityti), 1.099s (suskirstyti)
+10000000 -  32.232s (nuskaityti), 1.946s (suskirstyti)
 
 2 STRATEGIJA
 
-1000 - 0.001s (nuskaityti), 0s (suskirstyti)
+1000 - 0.003s (nuskaityti), 0s (suskirstyti)
 
-10000 - 0.028s (nuskaityti), 0.0s (suskirstyti)
+10000 - 0.028s (nuskaityti), 0.001s (suskirstyti)
 
-100000 -  0.287s (nuskaityti), 0.008s (suskirstyti)
+100000 -  0.3s (nuskaityti), 0.018s (suskirstyti)
 
-1000000 -  2.98s (nuskaityti), 0.098s (suskirstyti)
+1000000 -  3.016s (nuskaityti), 0.162s (suskirstyti)
 
-10000000 -  24.62s (nuskaityti), 0.94s (suskirstyti)
+10000000 -  35.065s (nuskaityti), 1.948s (suskirstyti)
 
 3 STRATEGIJA
 
-1000 - 0.003s (nuskaityti), 0s (suskirstyti)
+1000 - 0.002s (nuskaityti), 0s (suskirstyti)
 
-10000 - 0.025s (nuskaityti), 0.001s (suskirstyti)
+10000 - 0.8 (nuskaityti), 0.001s (suskirstyti)
 
-100000 -  0.239s (nuskaityti), 0.006s (suskirstyti)
+100000 -  0.303s (nuskaityti), 0.013s (suskirstyti)
 
-1000000 -  2.451s (nuskaityti), 0.064s (suskirstyti)
+1000000 -  3.02s (nuskaityti), 0.123s (suskirstyti)
 
-1000000 -  44.49s (nuskaityti), 5.684s (suskirstyti)
+10000000 -  35.332s (nuskaityti), 2.74s (suskirstyti)
 
