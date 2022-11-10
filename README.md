@@ -40,6 +40,7 @@ Naudojami du konteineriai:
 Taip pat programa atlieka **veikimo greičio (spartos) analizę 3 būdais**. Apskačiuoja sugaištą laiką failams  nuskaityti ir suskirstyti.
 
 VEKTORIAI
+
 1 STRATEGIJA
 
 1000 - 0.006s (nuskaityti), 0s (suskirstyti)
@@ -77,6 +78,7 @@ VEKTORIAI
 10000000 -  44.49s (nuskaityti), 5.684s (suskirstyti)
 
 LIST
+
 1 STRATEGIJA
 
 1000 - 0.002s (nuskaityti), 0s (suskirstyti)
