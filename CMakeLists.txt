@@ -1,6 +1,8 @@
-cmake_minimum_required(VERSION 3.20)
-project(v1_0)
+cmake_minimum_required(VERSION 3.25.0)
+project(v1)
+add_definitions(-std=c++11 -Wc++11-extensions )
+include_directories(include)
+set(CMAKE_CXX_STANDARD 11)
+file(GLOB SOURCES "src/*.cpp")
+add_executable(v1 ${SOURCES})
 
-set(CMAKE_CXX_STANDART 14)
-
-add_executable(v1_0 funkcijos.cpp funkcijos.h funkcijos_list.cpp funkcijos_list.h projektas.cpp projektas_list.cpp)
