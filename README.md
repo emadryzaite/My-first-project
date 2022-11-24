@@ -39,87 +39,46 @@ Naudojami du konteineriai:
 
 Taip pat programa atlieka **veikimo greičio (spartos) analizę 3 būdais**. Apskačiuoja sugaištą laiką failams  nuskaityti ir suskirstyti.
 
-VEKTORIAI
 
-1 STRATEGIJA
+ VECTOR NUSKAITYMAS
+ 
+| kiekis | 1 strategija| 2 strategija| 3 strategija |
+|----|---|---|---|
+| 1000 |  0.006| 0.001 | 0.007 |
+| 10000   | 0.028 | 0.028 |  0.025 |
+| 100000  | 0.228 | 0.287 |  0.239 |
+| 1000000  | 2.69 | 2.98 |  2.451 |
+| 10000000  | 25.862 | 24.62 |  44.49 |
 
-1000 - 0.006s (nuskaityti), 0s (suskirstyti)
+VECTOR SUSKIRTYMAS
 
-10000 - 0.028s (nuskaityti), 0.002s (suskirstyti)
+| kiekis | 1 strategija| 2 strategija| 3 strategija |
+|----|---|---|---|
+| 1000 |  0.00| 0.00 | 0.00 |
+| 10000   | 0.002 | 0.00 |  0.001 |
+| 100000  | 0.017 | 0.000 |  0.006 |
+| 1000000  | 0.403 | 0.098 | 0.064 |
+| 10000000  | 1.096 | 0.94 |  5.684 |
 
-100000 -  0.228s (nuskaityti), 0.017s (suskirstyti)
+LIST NUSKAITYMAS
 
-1000000 -  4.695s (nuskaityti), 0.403s (suskirstyti)
+| kiekis | 1 strategija| 2 strategija| 3 strategija |
+|----|---|---|---|
+| 1000 |  0.002| 0.003 | 0.02 |
+| 10000   | 0.027 | 0.028 |  0.8 |
+| 100000  | 0.238 | 0.3 |  0.303 |
+| 1000000  | 3.049 | 3.016 |  3.02 |
+| 10000000  | 32.232 | 25.062 |  35.332 |
 
-10000000 -  25.862s (nuskaityti), 1.099s (suskirstyti)
+LIST SUSKIRTYMAS
 
-2 STRATEGIJA
-
-1000 - 0.001s (nuskaityti), 0s (suskirstyti)
-
-10000 - 0.028s (nuskaityti), 0.0s (suskirstyti)
-
-100000 -  0.287s (nuskaityti), 0.008s (suskirstyti)
-
-1000000 -  2.98s (nuskaityti), 0.098s (suskirstyti)
-
-10000000 -  24.62s (nuskaityti), 0.94s (suskirstyti)
-
-3 STRATEGIJA
-
-1000 - 0.007s (nuskaityti), 0s (suskirstyti)
-
-10000 - 0.025s (nuskaityti), 0.001s (suskirstyti)
-
-100000 -  0.239s (nuskaityti), 0.006s (suskirstyti)
-
-1000000 -  2.451s (nuskaityti), 0.064s (suskirstyti)
-
-10000000 -  44.49s (nuskaityti), 5.684s (suskirstyti)
-
-LIST
-
-| fd | s | s | s | s |
-|----|---|---|---|---|
-| 1  | 1 | 1 | 1 | 1 |
-|    |   |   |   |   |
-|    |   |   |   |   |
+| kiekis | 1 strategija| 2 strategija| 3 strategija |
+|----|---|---|---|
+| 1000 |  0.00| 0.00 | 0.00 |
+| 10000   | 0.00 | 0.001 |  0.001 |
+| 100000  | 0.007 | 0.018 |  0.013 |
+| 1000000  | 0.076 | 0.162 | 0.123 |
+| 10000000  | 1.946 | 1.948 |  1.54 |
 
 
-
-1 STRATEGIJA
-
-1000 - 0.002s (nuskaityti), 0s (suskirstyti)
-
-10000 - 0.027s (nuskaityti), 0.0s (suskirstyti)
-
-100000 -  0.238s (nuskaityti), 0.007s (suskirstyti)
-
-1000000 -  3.043s (nuskaityti), 0.076s (suskirstyti)
-
-10000000 -  32.232s (nuskaityti), 1.946s (suskirstyti)
-
-2 STRATEGIJA
-
-1000 - 0.003s (nuskaityti), 0s (suskirstyti)
-
-10000 - 0.028s (nuskaityti), 0.001s (suskirstyti)
-
-100000 -  0.3s (nuskaityti), 0.018s (suskirstyti)
-
-1000000 -  3.016s (nuskaityti), 0.162s (suskirstyti)
-
-10000000 -  25.065s (nuskaityti), 1.948s (suskirstyti)
-
-3 STRATEGIJA
-
-1000 - 0.002s (nuskaityti), 0s (suskirstyti)
-
-10000 - 0.8 (nuskaityti), 0.001s (suskirstyti)
-
-100000 -  0.303s (nuskaityti), 0.013s (suskirstyti)
-
-1000000 -  3.02s (nuskaityti), 0.123s (suskirstyti)
-
-10000000 -  35.332s (nuskaityti), 2.74s (suskirstyti)
 
