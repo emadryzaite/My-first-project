@@ -79,6 +79,14 @@ VEKTORIAI
 
 LIST
 
+| fd | s | s | s | s |
+|----|---|---|---|---|
+| 1  | 1 | 1 | 1 | 1 |
+|    |   |   |   |   |
+|    |   |   |   |   |
+
+
+
 1 STRATEGIJA
 
 1000 - 0.002s (nuskaityti), 0s (suskirstyti)
@@ -101,7 +109,7 @@ LIST
 
 1000000 -  3.016s (nuskaityti), 0.162s (suskirstyti)
 
-10000000 -  35.065s (nuskaityti), 1.948s (suskirstyti)
+10000000 -  25.065s (nuskaityti), 1.948s (suskirstyti)
 
 3 STRATEGIJA
 
